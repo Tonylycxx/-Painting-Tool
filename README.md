@@ -200,7 +200,7 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 	});// the end of shuiyinMenuItem.addActionListener()
 ```
 	
-	首先判断输入的字符串是否为空，如若不是空，那么进行函数中的操作，设置水印字体为楷体，大小以及旋转角度，颜色为灰色并设置透明度。   
+	    首先判断输入的字符串是否为空，如若不是空，那么进行函数中的操作，设置水印字体为楷体，大小以及旋转角度，颜色为灰色并设置透明度。   
 	这里存在问题，即旋转时，画布也会随之转动。故在函数最后再将画布旋转回来（即所绘制的画面）并将透明度选择为不透明，背景颜色改好。
 
 ```Java
@@ -220,4 +220,34 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 			g.setColor(foreColor);
 		} // the end of if
 	}// the end of addWatermark()
+```
+#### 3.3 绘制基础图形
+	定义布尔量 "drawShape" 并初始化为 "false" 。
+````Java
+	boolean drawShape = false;
+````
+	如果布尔量 "drawShape" 为 "true" ，则分类讨论，并选出相应的绘图坐标和图形的大小。  
+	本软件默认绘制图形时，鼠标点击处为要绘制图形的几何中心处。
+
+```Java
+	public void mousePressed(MouseEvent e) {
+		if (drawShape) {
+			switch (shape.getType()) {
+			case Shapes.YUAN:
+				int yuanX = e.getX() - shape.getWidth() / 2;
+				int yuanY = e.getY() - shape.getHeigth() / 2;
+				Ellipse2D yuan = new Ellipse2D.Double(yuanX, yuanY, shape.getWidth(), shape.getHeigth());
+				g.draw(yuan);
+				break;
+			case Shapes.FANG:
+				int fangX = e.getX() - shape.getWidth() / 2;
+				int fangY = e.getY() - shape.getHeigth() / 2;
+				Rectangle2D fang = new Rectangle2D.Double(fangX, fangY, shape.getWidth(), shape.getHeigth());
+				g.draw(fang);
+				break;
+			}// the end of switch
+			canvas.repaint();
+			drawShape = false;
+		}
+	}
 ```
