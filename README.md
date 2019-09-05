@@ -31,4 +31,122 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
         * 使用橡皮
         * 保存照片
 ## 软件主要代码展示及说明：
-    
+### 1. 所有引用
+```Java
+        package Draw;
+
+        import javax.swing.JFrame;
+        import java.awt.Color;
+        import java.awt.Graphics;
+        import java.awt.Graphics2D;
+        import java.awt.image.BufferedImage;
+        import java.awt.event.MouseAdapter;
+        import java.awt.event.MouseEvent;
+        import java.awt.event.MouseMotionAdapter;
+        import java.awt.BorderLayout;
+        import javax.swing.ButtonGroup;
+        import javax.swing.JButton;
+        import javax.swing.JColorChooser;
+        import javax.swing.JToggleButton;
+        import javax.swing.JToolBar;
+        import java.awt.BasicStroke;
+        import java.awt.event.ActionEvent;
+        import java.awt.event.ActionListener;
+        import java.awt.geom.Ellipse2D;
+        import java.awt.geom.Rectangle2D;
+        import com.mr.util.FrameGetShape;
+        import com.mr.util.ShapeWindow;
+        import com.mr.util.Shapes;
+        import com.mr.util.DrawImageUtil;
+        import javax.swing.JMenu;
+        import javax.swing.JMenuBar;
+        import javax.swing.JMenuItem;
+        import java.awt.AlphaComposite;
+        import java.awt.Font;
+        import javax.swing.JOptionPane;
+        import java.awt.Image;
+        import java.awt.Point;
+        import java.awt.Toolkit;
+        import java.awt.Cursor;
+        import javax.swing.ImageIcon; 
+```
+### 2. 变量
+```Java
+        BufferedImage image = new BufferedImage(800, 600, BufferedImage.TYPE_INT_BGR);
+	Graphics gs = image.getGraphics();
+	Graphics2D g = (Graphics2D) gs;
+	drawPictureCanvas canvas = new drawPictureCanvas();
+	Color foreColor = Color.BLACK;
+	Color backgroundColor = Color.WHITE;
+	int x = -1;
+	int y = -1;
+	boolean rubber = false;
+	private JToolBar toolBar;
+	private JButton eraserButton;
+	private JToggleButton strokeButton1;
+	private JToggleButton strokeButton2;
+	private JToggleButton strokeButton3;
+	private JButton backgroundButton;
+	private JButton foregroundButton;
+	private JButton clearButton;
+	private JButton saveButton;
+	private JButton shapeButton;
+	private JMenuItem strokeMenuItem1;
+	private JMenuItem strokeMenuItem2;
+	private JMenuItem strokeMenuItem3;
+	private JMenuItem clearMenuItem;
+	private JMenuItem foregroundMenuItem;
+	private JMenuItem backgroundMenuItem;
+	private JMenuItem eraserMenuItem;
+	private JMenuItem exitMenuItem;
+	private JMenuItem saveMenuItem;
+	private JMenuItem shuiyinMenuItem;
+	private String shuiyin = "";
+	private pictureWindow picWindow;
+	private JButton showPicButton;
+	boolean drawShape = false;
+	Shapes shape;
+```
+#### 2.1 Button部分
+```Java
+    private JButton eraserButton;
+	private JToggleButton strokeButton1;
+	private JToggleButton strokeButton2;
+	private JToggleButton strokeButton3;
+	private JButton backgroundButton;
+	private JButton foregroundButton;
+	private JButton clearButton;
+	private JButton saveButton;
+	private JButton shapeButton;
+    private JButton showPicButton;
+```
+#### 2.2 MenuItem部分
+```Java
+    private JMenuItem strokeMenuItem1;
+	private JMenuItem strokeMenuItem2;
+	private JMenuItem strokeMenuItem3;
+	private JMenuItem clearMenuItem;
+	private JMenuItem foregroundMenuItem;
+	private JMenuItem backgroundMenuItem;
+	private JMenuItem eraserMenuItem;
+	private JMenuItem exitMenuItem;
+	private JMenuItem saveMenuItem;
+	private JMenuItem shuiyinMenuItem;
+```
+#### 2.3 其他变量部分
+```Java
+    BufferedImage image = new BufferedImage(800, 600, BufferedImage.TYPE_INT_BGR);
+	Graphics gs = image.getGraphics();
+	Graphics2D g = (Graphics2D) gs;
+	drawPictureCanvas canvas = new drawPictureCanvas();
+	Color foreColor = Color.BLACK;
+	Color backgroundColor = Color.WHITE;
+	int x = -1;
+	int y = -1;
+	boolean rubber = false;
+	private JToolBar toolBar;
+	private String shuiyin = "";
+	private pictureWindow picWindow;
+	boolean drawShape = false;
+	Shapes shape;
+```
