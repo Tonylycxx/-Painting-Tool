@@ -150,3 +150,10 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 	boolean drawShape = false;
 	Shapes shape;
 ```
+### 3. 逻辑部分
+#### 3.1 橡皮
+	
+	
+```Java
+	boolean rubber = false;
+```
