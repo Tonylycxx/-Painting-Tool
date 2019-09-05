@@ -20,7 +20,8 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 ## 系统业务流程：
 ```
 graph TD
-    A[软件] -->B(用户)
+    A[软件] --> B(用户)
+    
     
 ```    
     
