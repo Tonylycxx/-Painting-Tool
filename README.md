@@ -18,10 +18,11 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
     Eclipse: <https://www.eclipse.org/downloads/packages/>
     环境配置教程：<https://www.cnblogs.com/xch-yang/p/7629351.html>
 ## 系统业务流程：
+```
 graph TD
     A[软件] -->B(用户)
     
-    
+```    
     
     
 ## 软件主要代码展示及说明：
