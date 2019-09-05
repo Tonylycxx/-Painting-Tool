@@ -152,8 +152,31 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 ```
 ### 3. 逻辑部分
 #### 3.1 橡皮
-	
+
+	定义布尔变量 rubber 并初始化为"false"。
 	
 ```Java
 	boolean rubber = false;
+```
+
+	为橡皮的按钮 "eraserButton" 添加监听器，并且通过布尔值 rubber 的取值来改变软件中相应按钮的功能和标志（包括按钮颜色）。
+
+```Java
+		eraserButton.addActionListener(new ActionListener() {
+			public void actionPerformed(final ActionEvent arg0) {
+				if (rubber) {
+					eraserButton.setToolTipText("Eraser");
+					eraserButton.setIcon(new ImageIcon("src/Draw/icon/橡皮.png"));
+					eraserMenuItem.setText("Eraser");
+					g.setColor(foreColor);
+					rubber = false;
+				} else {
+					eraserMenuItem.setText("Draw");
+					eraserButton.setToolTipText("Draw");
+					eraserButton.setIcon(new ImageIcon("src/Draw/icon/画笔.png"));
+					g.setColor(backgroundColor);
+					rubber = true;
+				} // the end of else
+			} // the end of actionPerformed()
+		}); // the end of eraserButton.addActionListener()
 ```
