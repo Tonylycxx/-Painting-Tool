@@ -1,7 +1,7 @@
 # -Painting-Tool
-A Painting Tool made by myself (By Java)   自写Java画图软件
+A Painting Tool made by myself (By Java)   自写Java绘图软件
 ## 项目定位：
-    一个基于Java的画图小软件，可以实现基本的绘图功能：
+    一个基于Java的绘图小软件，可以实现基本的绘图功能：
     1.三种不同粗细的画笔的选择和使用
     2.橡皮的擦除功能
     3.整张画布的重置功能
