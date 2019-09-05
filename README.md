@@ -30,6 +30,10 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
         * 清除图案
         * 使用橡皮
         * 保存照片
+	
+
+![No.1](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/1.png)
+
 ## 软件主要代码展示及说明：
 ### 1. 所有引用
 ```Java
@@ -180,6 +184,10 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 			} // the end of actionPerformed()
 		}); // the end of eraserButton.addActionListener()
 ```
+效果如下：  
+
+![No.2](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/2.png) ![No.3](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/3.png)
+
 #### 3.2 水印
 	定义字符串变量 "shuiyin" 并初始化为空字符串，这是为了在后面的创建水印函数中避免并没有输入水印却按下 "确定" 按钮的情况。
 ```Java
@@ -221,6 +229,10 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 		} // the end of if
 	}// the end of addWatermark()
 ```
+效果如下：   
+![No.4](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/4.png)
+![No.5](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/5.png)   
+
 #### 3.3 绘制基础图形
 	定义布尔量 "drawShape" 并初始化为 "false" 。
 ````Java
@@ -251,6 +263,11 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 		}
 	}
 ```
+效果如下：   
+
+![No.7](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/7.png)
+![No.8](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/8.png)   
+
 #### 3.4 简笔画窗口
 	通过使用新建的类 "pictureWindow.java" 来设置子窗口的大小、位置和其中图片的显示。
 	代码如下：
@@ -269,7 +286,7 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 	import javax.swing.JPanel;
 	import javax.swing.JWindow;
 	import com.mr.util.BackgroundPanel;
-
+	
 	public class pictureWindow extends JWindow{
 		
 		private JButton changeButton;
@@ -328,8 +345,14 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 		}//the end of getListImage()
 	
 	}//the end of PictureWindow()
+
 	
 ```
+效果如下：   
+
+![No.6](https://github.com/Tonylycxx/-Painting-Tool/blob/master/Img/6.png)   
+
+
 ## 作者
 	刘禹辰 18373276   
 	联系方式：
