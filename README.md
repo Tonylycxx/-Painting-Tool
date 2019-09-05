@@ -109,7 +109,7 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 ```
 #### 2.1 Button部分
 ```Java
-    private JButton eraserButton;
+    	private JButton eraserButton;
 	private JToggleButton strokeButton1;
 	private JToggleButton strokeButton2;
 	private JToggleButton strokeButton3;
@@ -118,11 +118,11 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 	private JButton clearButton;
 	private JButton saveButton;
 	private JButton shapeButton;
-    private JButton showPicButton;
+    	private JButton showPicButton;
 ```
 #### 2.2 MenuItem部分
 ```Java
-    private JMenuItem strokeMenuItem1;
+    	private JMenuItem strokeMenuItem1;
 	private JMenuItem strokeMenuItem2;
 	private JMenuItem strokeMenuItem3;
 	private JMenuItem clearMenuItem;
@@ -135,7 +135,7 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 ```
 #### 2.3 其他变量部分
 ```Java
-    BufferedImage image = new BufferedImage(800, 600, BufferedImage.TYPE_INT_BGR);
+    	BufferedImage image = new BufferedImage(800, 600, BufferedImage.TYPE_INT_BGR);
 	Graphics gs = image.getGraphics();
 	Graphics2D g = (Graphics2D) gs;
 	drawPictureCanvas canvas = new drawPictureCanvas();
