@@ -330,3 +330,8 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 	}//the end of PictureWindow()
 	
 ```
+## 作者
+	刘禹辰 18373276   
+	联系方式：
+		1. 手机：13693146399
+		2. 邮箱：2290549567@qq.com
