@@ -180,3 +180,49 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 			} // the end of actionPerformed()
 		}); // the end of eraserButton.addActionListener()
 ```
+#### 3.2 水印
+	定义字符串变量 "shuiyin" 并初始化为空字符串，这是为了在后面的创建水印函数中避免并没有输入水印却按下 "确定" 按钮的情况。
+```Java
+	private String shuiyin = "";
+```
+	通过如下函数调出水印设置窗口，并将总窗口名称处加上水印的内容。
+	
+```Java
+	shuiyinMenuItem.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			shuiyin = JOptionPane.showInputDialog(drawPictureFrame.this, "你想添加什么水印？");
+			if (null == shuiyin) {
+				shuiyin = "";
+			} else {
+				setTitle("画图程序(水印内容: [ " + shuiyin + " ] )");
+			} // the end of else
+		}// the end of actionPerformed()
+	});// the end of shuiyinMenuItem.addActionListener()
+```
+
+
+
+
+
+
+
+
+
+```Java
+	private void addWatermark() {
+		if (!"".equals(shuiyin.trim())) {
+			g.rotate(Math.toRadians(-30));
+			Font font = new Font("楷体", Font.BOLD, 72);
+			g.setFont(font);
+			g.setColor(Color.GRAY);
+			AlphaComposite alpha = AlphaComposite.SrcOver.derive(0.4f);
+			g.setComposite(alpha);
+			g.drawString(shuiyin, 150, 500);
+			canvas.repaint();
+			g.rotate(Math.toRadians(30));
+			alpha = AlphaComposite.SrcOver.derive(1f);
+			g.setComposite(alpha);
+			g.setColor(foreColor);
+		} // the end of if
+	}// the end of addWatermark()
+```
