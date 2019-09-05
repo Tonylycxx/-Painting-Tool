@@ -18,4 +18,4 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
     Eclipse: <https://www.eclipse.org/downloads/packages/>
     环境配置教程：<https://www.cnblogs.com/xch-yang/p/7629351.html>
 ## 软件具体形式展示：
-    ![初始界面](C:\Users\tony\Desktop)
+    
