@@ -14,6 +14,6 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 ## 开发环境介绍：
     本项目程序软件使用的是Java语言，配合Eclipse开发环境，JDK使用的是Java SE-11.0.2版本
     相应的下载连接如下：
-    [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+    JDK: <https://www.oracle.com/technetwork/java/javase/downloads/index.html>
     Eclipse: <https://www.eclipse.org/downloads/packages/>
     环境配置教程：<https://www.cnblogs.com/xch-yang/p/7629351.html>
