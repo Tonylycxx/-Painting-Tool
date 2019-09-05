@@ -199,14 +199,9 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
 		}// the end of actionPerformed()
 	});// the end of shuiyinMenuItem.addActionListener()
 ```
-
-
-
-
-
-
-
-
+	
+	首先判断输入的字符串是否为空，如若不是空，那么进行函数中的操作，设置水印字体为楷体，大小以及旋转角度，颜色为灰色并设置透明度。   
+	这里存在问题，即旋转时，画布也会随之转动。故在函数最后再将画布旋转回来（即所绘制的画面）并将透明度选择为不透明，背景颜色改好。
 
 ```Java
 	private void addWatermark() {
