@@ -18,7 +18,7 @@ A Painting Tool made by myself (By Java)   自写Java绘图软件
     Eclipse: <https://www.eclipse.org/downloads/packages/>
     环境配置教程：<https://www.cnblogs.com/xch-yang/p/7629351.html>
 ## 系统业务流程：
-    1. 用户
+1. 用户
         1. 设置画笔粗细
            1. 设置画笔颜色
                1. 设置背景颜色
